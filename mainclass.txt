@@ -1,0 +1,17 @@
+package demo;
+
+public class mainclass {
+	
+	public static void main(String[] args) {
+		
+	
+	
+	Fish f = new Fish("Shark",  "pellet", "Flexing body with tail", "water");
+	f.name();
+	f.eat();
+	f.move();
+	f.live();
+	
+
+}
+}
