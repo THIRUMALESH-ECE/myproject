@@ -1,0 +1,48 @@
+package com.technoelevate.demo;
+
+import java.util.Scanner;
+
+public class mainclass extends challenge {
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		challenge c = new challenge();
+		
+		while(true){
+			
+			System.out.println("Welcome to Time Mangement System");
+			
+			System.out.println("------------------------------------");
+			
+			System.out.println("1: calulate how many minutes are in seconds\n2: calculate how many hours minutes and seconds is equals to minutes and seconds");
+			
+			System.out.println("Enter your choice");
+			
+			int choice = scan.nextInt();
+			
+			
+			switch(choice){
+			
+			case 1: System.out.println("Enter the seconds to check in min");
+			int seconds = scan.nextInt();
+				c.getDurationString(seconds);
+			break;
+			
+			case 2:  c.getDurationString(2, 120);
+			break;
+			
+			default:System.out.println("Invaid choice");
+			scan.close();
+			
+			}
+			System.out.println("--------------------------------------");
+		}
+
+
+
+
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.Technoelevate.demo2;
+
+import java.util.Scanner;
+
+public class maincalss2 {
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner (System.in);
+
+		System.out.println("Enter the first Argument");
+		int x = scan.nextInt();
+
+		System.out.println("Enter the Second Argument");
+		int y = scan.nextInt();
+
+		System.out.println("Enter the Third Argument");
+		int z = scan.nextInt();
+
+		challenge2 c = new challenge2();
+		c.printEqual(x, y, z);
+
+		scan.close(); 	
+	}
+}

@@ -1,0 +1,42 @@
+package com.technoelevate.demo;
+
+public class challenge {
+
+	 
+
+	private String String;
+
+	public String getDurationString(int minutes,int seconds){
+
+		if((minutes>=0 ) && (seconds>=0 && seconds<=59) ){
+			System.out.println("This is minutes");
+		}
+		else{
+			return "Invaild values";
+			
+		}
+		return String;
+
+	}
+
+	public String getDurationString(int seconds){
+		if(seconds>=0){
+			
+			 int sec = seconds/60;
+
+			System.out.println(seconds+" Minutes is equals to "+sec+" seconds");
+		}
+		else
+		{
+			return "Invaild values";
+					}
+		return String;
+
+		
+	}
+
+
+
+
+
+}
